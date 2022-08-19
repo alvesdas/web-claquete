@@ -47,6 +47,7 @@ header nav a:hover {
 .filme-principal {
     background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/resources/centraldobrasil.jpg);
     background-size: cover;
+    box-shadow: inset 0px -200px 90px var(--preto);
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -98,4 +99,11 @@ header nav a:hover {
 
 .botao i {
     margin-right: 8px;
+}
+
+/* CARROSSEL DE FILMES */
+.poster {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
