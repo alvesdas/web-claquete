@@ -1,0 +1,101 @@
+/* GLOBAL */
+:root {
+    --preto: #141414;
+    --verde: #39ac39;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: 'Rubik', Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+/* CABEÇALHO */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1% 4%; 
+}
+
+header .logo {
+    color: var(--verde);
+    font-family: 'Playfair Display SC', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+header nav a {
+    text-decoration:none;
+    color: #e5e5e5;
+    margin-right: 35px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* FILME PRINCIPAL */
+.filme-principal {
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(/resources/centraldobrasil.jpg);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .container {
+    width: 30%;
+    margin-left: 4%;
+}
+
+
+.filme-principal .filme-titulo {
+    font-size: 65px;
+}
+
+.filme-principal .filme-descricao {
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    font-size: medium;
+    font-family: 'Rubik', Helvetica Neue, Helvetica, Arial, sans-serif;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.botao:nth-child(1) {
+    background-color: #fff;
+    color: var(--preto);
+}
+
+.botao:nth-child(1):hover {
+    background-color: gainsboro;
+}
+
+.botao:nth-child(2):hover {
+    background-color: rgba(0, 0, 0, .70);
+}
+
+.botao i {
+    margin-right: 8px;
+}
